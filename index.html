@@ -5,28 +5,52 @@
   <title>Benim Sayfam</title>
   <style>
     body {
-      background-color: Black;   /* Arka plan siyah */
-      color: white;              /* Yazılar beyaz */
+      background-color: black;
+      color: white;
       font-family: Arial, sans-serif;
     }
     h1 {
-      color: lightblue;             /* Başlık turuncu */
-      text-align: center;        /* Ortada dursun */
+      color: lightblue;
+      text-align: center;
     }
     p {
-      font-size: 20px;           /* Yazı boyutu büyük */
-      color: lightblue;          /* Paragraf rengi */
+      font-size: 20px;
+      color: lightblue;
+      text-align: center;
     }
     img {
-      border-radius: 20px;       /* Resmin köşelerini oval yapar */
-      width: 250px;              /* Resim boyutunu ayarlar */
+      display: block;
+      margin: 0 auto;
+      border-radius: 20px;
+      width: 250px;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      background-color: lightblue;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: deepskyblue;
     }
   </style>
 </head>
 <body>
   <h1>Favori Aktörüm</h1>
   <p>Micheal Scofiels Adam...</p>
-  <img src="https://upload.wikimedia.org/wikipedia/tr/4/47/MichaelScofield_prisonbreaktv.jpg" alt="Resmim">
+  <img src="https://upload.wikimedia.org/wikipedia/tr/4/47/MichaelScofield_prisonbreaktv.jpg" alt="Micheal Scofield">
+  <div class="button-container">
+    <button onclick="window.open('https://upload.wikimedia.org/wikipedia/tr/4/47/MichaelScofield_prisonbreaktv.jpg')">
+      Bağlantıya gitmek için tıklayın
+    </button>
+  </div>
 </body>
-</html><button onclick="window.open('https://upload.wikimedia.org/wikipedia/tr/4/47/MichaelScofield_prisonbreaktv.jpg')">
-  Bağlantıya gitmek için tıklayın
+</html>
